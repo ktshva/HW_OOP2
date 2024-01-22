@@ -6,7 +6,7 @@ public class RadioTest {
     @Test
     public void shouldNotIncreaseVolumeWhenPos() {
         Radio rad = new Radio();
-        rad.setCurrentVolume(101);
+        rad.setCurrentVolume(102);
         rad.increaseVolume();
 
         int expected = 100;
