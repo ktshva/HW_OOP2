@@ -4,6 +4,13 @@ import ru.netology.radio.Radio;
 
 public class RadioTest {
     @Test
+    public void test() {
+        Radio rad = new Radio(10);
+
+        Assertions.assertEquals(10, rad.getNumChannels());
+    }
+
+    @Test
     public void shouldNotIncreaseVolumeWhenPos() {
         Radio rad = new Radio();
         rad.setCurrentVolume(102);
